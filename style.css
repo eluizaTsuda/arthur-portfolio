@@ -1,0 +1,600 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root{
+    --color-white: #f6f6f6;
+    --color-black: #000000;
+    --color-gray: #808080;
+    --color-lightgray: #d3d3d3;
+    --color-dark-charcoal: #333333;
+    --color-dark-grayish: #3a3b3c;
+    --color-ocre:#bb9e0d;
+    --color-light-blue: #5b7ef0;
+}
+
+body {
+  font: 550 15px Lato, sans-serif;
+  line-height: 1.8;
+  color: var(--color-light-gray);
+}
+
+/* topmenu section styles start here */
+#topmenu {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/bg_topmenu_car.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+}
+/* topmenu section styles end here */
+
+/* navbar section styles start here */
+.navbar {
+  margin-bottom: 0;
+  background-color: var(--color-black);
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: var(--color-white) !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: var(--color-dark) !important;
+  background-color: var(--color-white) !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+  color: var(--color-white) !important;
+
+}
+/* navbar section styles end here */
+
+/* logo start here */
+.logo {
+  width: 75px;
+  cursor: pointer;
+  filter: invert(100%);;
+}
+.logo:hover {
+  transform: scale(1.50);
+  transition: 1.0s ease;
+}
+/* logo end here */
+
+/* Subject styles start here */
+#subject {
+  position: absolute;
+  text-align: left;
+  padding-left: 7%;
+  align-items: center;
+  transform: translateY(50%);
+}
+#subject h1 {
+  font-size: 95px;
+  font-weight: 100;
+  color: var(--color-white);
+}
+#subject p {
+  font-size: 35px;
+  font-weight: 100;
+  color: var(--color-white);
+}
+#subject a button {
+  margin-top: 2em;
+  background: transparent;
+  border-color: var(--color-white);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#subject a button:hover {
+  border-color: var(--color-black);
+  color: var(--color-black);
+  background: var(--color-white);
+}
+/* Subject styles end here */
+
+/* Welcome section styles start here */
+#welcome {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+#welcome img {
+  position: relative;
+  display: flex;
+  width: 95%;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  justify-content: center;
+}
+
+#welcome .info {
+  width: 50%;
+  text-align: center;
+}
+#welcome .info h3 {
+  font-size: 40px;
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: .2em;
+}
+#welcome .info p {
+  font-size: 2.2rem;
+  color: var(--color-dark-grayish);
+  font-weight: 300;
+  margin-top: -.5em;
+}
+
+#welcome .underline {
+  width: 28rem;
+  height: 0.15rem;
+  background: var(--color-black);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+#welcome .animate-left {
+  margin: auto;
+  transition: width 2s, height 2s, transform 2s;
+}
+#welcome .animate-left:hover {
+  transform: rotate(360deg);
+}
+
+#welcome .animate-right:hover{
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* Welcome section styles end here */
+
+/* About section styles start here */
+#about {
+  position: relative;
+  background: url(img/bg_about_car.png);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#about .banner {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: var(--color-black);
+
+  transform: translateY(-50%);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 100px;
+}
+#about .banner h3 {
+  font-size: 32px;
+  font-weight: 200;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+#about .banner p {
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--color-white);
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+/* About section styles end here */
+
+
+/* Customers' reviews carousel styles start here*/
+#reviews {
+  width: 100%;
+  height: 410px;
+  margin-bottom: -2rem;
+  position: relative;
+  display: block;
+  background-color: var(--color-black);
+}
+#reviews .carousel {
+  position: relative;
+  text-align: center;
+  height: 400px;
+  background-image: url(img/object_keyboard.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 2.5rem;
+}
+#reviews .item p {
+  font-size: 1.5em;
+  color: var(--color-black);
+  padding-left: 4rem;
+  padding-right: 4rem;
+} 
+/* Customers' reviews carousel styles end here*/
+
+
+/* Contact styles start here */
+#contact {
+  margin-top: 0rem;
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/bg_contact_car.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-black);
+}
+#contact .details-space {
+  margin-top: 0rem;
+}
+#contact .details-space h3 {
+  font-size: 25px;
+  font-weight: 200;
+  color: var(--color-white);
+  text-transform: uppercase;
+}
+#contact .social {
+  margin-top: 1rem;
+  padding-right: 0.4rem;
+}
+/* Contact styles end here */
+
+
+/* Top - Arrow up styles start here */
+.top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+  background: var(--color-lightgray);
+  color: var(--color-dark-charcoal);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+}
+/*  Top - Arrow up styles end here */
+
+/*  footer start here */
+
+footer {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: var(--color-white);
+}
+footer .brandname {
+  margin-bottom: 0px;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: var(--color-ocre);
+  font-family: Princess Sofia, Calibri;
+  text-shadow: 1px 1px 8px var(--color-light-blue);
+}
+footer .codedby {
+  font-size: 0.8em; 
+  color: var(--color-light-grey);
+}
+/* footer end here */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>  Portfolio styles start here */
+
+#topmenu-portfolio .icon-bar{
+  background-color: var(--color-white);
+}
+#topmenu-portfolio .splash {
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/splash_cars.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+#topmenu-portfolio .navbar {
+  line-height: 7.5 !important;
+}
+
+#portfolio .row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  justify-content: center;
+  position: relative;
+}
+
+#portfolio .title {
+  text-align: center;
+  margin-top: 12rem;
+  margin-bottom: 2rem;
+  color: var(--color-black);
+}
+#portfolio .title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2em;
+  font-weight: 300;
+}
+
+#portfolio .underline {
+  width: 28rem;
+  height: 0.15rem;
+  background: var(--color-black);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+#portfolio .btn-area {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+#portfolio .filter-btn {
+  background: transparent;
+  border-color: var(--color-black);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  padding: 0.5rem 0.75rem;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+#portfolio .filter-btn:hover {
+  background: var(--color-gray);
+  color: var(--color-white);
+}
+#portfolio .portfolio-item {
+  display: grid;
+  grid-gap: 1rem 5rem;
+  max-width: 50rem;
+  width: 450px;
+  margin: 0 auto;
+  justify-items: center;
+  margin-bottom: 4em;
+}
+#portfolio .portfolio-item.hide {
+  display: none;
+}
+#portfolio .portfolio-item.show {
+  display: grid;
+  justify-items: center;
+  animation: showItem 0.5s ease;
+}
+
+@-webkit-keyframes showItem {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes showItem {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+#portfolio .photo {
+  object-fit: cover;
+  height: 275px;
+  width: 100%;
+  height: auto;
+}
+#portfolio .item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted var(--color-gray);
+  width: 448px;
+}
+#portfolio .item-info h4 {
+  margin-bottom: .5rem;
+  width: 500px;
+  color: var(--color-black);
+}
+#portfolio .category-detail {
+  color: var(--color-black);
+  text-align: right;
+  font-size: 15px;
+}
+/* Menu portfolio styles end here */
+
+/* >>>>>>>>>>>>>>>>>> RESPONSIVE STYLES <<<<<<<<<<<<<<<<<< */
+
+/* Responsive styles start here */
+@media (max-width: 1100px) {
+
+  #portfolio .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 678px) {
+  #welcome {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 550px) {
+  #subject h1{
+    font-size: 75px;
+  }
+  #welcome {
+    display: grid;
+    justify-content: center;
+  }
+  #welcome .info {
+    margin: auto;
+  }
+  #welcome .info h3 {
+    font-size: 30px;
+  }
+  #welcome .info p {
+    font-size: 2.0rem;
+  }
+  #welcome .underline {
+    width: 18rem;
+  }
+  #about .banner {
+    padding: 0px 25px;
+  }
+  #about .banner h3 {
+    font-size: 1.3em;
+  }
+  #about .banner p {
+    font-size: 1.0em;
+  }
+  #reviews .item p {
+    font-size: 1.0em;
+  }
+  #contact .details-space h3 {
+    font-size: 20px;
+  }
+
+  #portfolio .title {
+    font-size: 2.0rem;
+  }
+  #portfolio .btn-area {
+    display: grid;
+    grid-gap: 4px;
+    justify-content: center;
+  }
+  #portfolio .filter-btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 410px) {
+  #subject h1{
+    font-size: 65px;
+  }
+  #welcome .info h3 {
+    font-size: 25px;
+  }
+  #welcome .info p {
+    font-size: 1.8rem;
+  }
+  #welcome .underline {
+    width: 16rem;
+  }
+
+  #portfolio .portfolio-item {
+    padding: 5px 23px 5px 23px;
+    max-width: 398x;
+    width: 398px;
+  }
+  #portfolio .item-info header {
+    width: 380px;
+    width: 340px;
+  }
+  #portfolio .item-info h4 {
+    width: 168px;
+  }
+}
+
+@media (max-width: 300px) {
+  #subject h1{
+    font-size: 45px;
+  }
+  #subject p{
+    font-size: 22px;
+  }
+  #welcome .info h3 {
+    font-size: 20px;
+  }
+  #welcome .info p {
+    font-size: 1.6rem;
+  }
+  #welcome .underline {
+    width: 12rem;
+  }
+  #about .banner h3 {
+    font-size: 1.2em;
+  }
+  #about .banner p {
+    font-size: 0.8em;
+  }
+  #reviews .item p {
+    font-size: 0.8em;
+  }
+  #contact .details-space h3 {
+    font-size: 16px;
+  }
+  #portfolio .title {
+    font-size: 1.8rem;
+  }
+  #portfolio .portfolio-item {
+    padding: 5px 5px 5px 5px;
+    max-width: 275px;
+    width: 275px;
+  }
+  #portfolio .item-info header {
+    width: 250px;
+  }
+  #portfolio .item-info h4 {
+    font-size: 1.3rem;
+    width: 138px;
+  }
+  
+}
+
