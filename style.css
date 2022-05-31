@@ -328,7 +328,7 @@ footer .codedby {
   background-color: var(--color-white);
 }
 #topmenu-portfolio .splash {
-  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/splash_cars.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/splash_all.png);
   background-position: center;
   background-size: cover;
   width: 100%;

@@ -17,7 +17,7 @@ let game = document.querySelector('#game');
 
 // Add Event Listeners for Splash Image Changes
 all.addEventListener('click', () => {
-    splash.style.backgroundImage = "url(img/splash_cars.png)";
+    splash.style.backgroundImage = "url(img/splash_all.png)";
 })
 cars.addEventListener('click', () => {
     splash.style.backgroundImage = "url(img/splash_senna_car.png)";
