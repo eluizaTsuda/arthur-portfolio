@@ -36,6 +36,7 @@ game.addEventListener('click', () => {
 })
 
 // Filter and Display Items for the Selected Category
+
 for(let i = 0; i < totalFilterBtns; i++){
     filterBtns[i].addEventListener("click", function(){
         filterContainer.querySelector(".active").classList.remove("active");
